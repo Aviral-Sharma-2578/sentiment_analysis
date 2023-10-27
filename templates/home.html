@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .App {
+            text-align: center;
+            background-image: url("https://th.bing.com/th/id/R.057b31be70cc73b9d0c829205f90e02f?rik=PxrTE7PkNVZoRg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fCool-nature-backgrounds-hd-resolution-1920x1080.jpg&ehk=hQzPW7PZMRmNSlTgkm1V0lR4FopZ7yGKJtUMRedf8wM%3d&risl=&pid=ImgRaw&r=0");
+            height: 100vh;
+        }
+        textarea{
+            margin-top: 10px;
+            width: 60vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="App">
+        <h1 class="pt-5 text-4xl">Sentimental-Analysis</h1>
+    <form method="POST" clas="form">
+
+        <textarea  type="text" name="inp" id="message" cols="30" rows="4"
+        placeholder="Write your text..."
+        className="mt-3 px-1 form-textarea resize-none w-auto shadow-sm rounded border-black-300 bg-gray-100 placeholder-gray-300 focus:border-black-400 focus:ring-black-400"
+        ></textarea> 
+        <input type="submit" name="submit" id="btn"></input>
+    </form>
+    <h1 class="output text-4xl py-5">{{message}}</h1>
+    </div>
+</body>
+</html>
